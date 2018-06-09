@@ -64,21 +64,16 @@
         </a>
     </div>
 
-    <a rel="nofollow" href="javascript:startDownload();" class="btn form-btn">免费下载软件</a>
+    <a rel="nofollow" href="javascript:void(0);" onclick="startOpen();" class="btn form-btn">免费下载软件</a>
 
     <script>
 
-        function startDownload(){
+        function startOpen(){
 
-            var e = document.createElement('a');
 
-            e.href = "https://github.com/wechatel/wechatel.github.io/releases/download/v1.0.1/wechatel.exe";
+            var url = 'https://github.com/wechatel/wechatel.github.io/releases/download/v1.0.1/wechatel.exe';
 
-            e.setAttribute('download','true');
-
-            var evt = new MouseEvent('click');
-
-            e.dispatchEvent(evt);
+            window.open(url,"_blank");
 
         }
 
